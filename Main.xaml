@@ -1,54 +1,107 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}"
-xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
-xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities"
-xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
-xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
-xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
-xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <TextExpression.NamespacesForImplementation>
-        <sco:Collection x:TypeArguments="x:String">
-            <x:String>System.Activities</x:String>
-            <x:String>System.Activities.Statements</x:String>
-            <x:String>System.Activities.Expressions</x:String>
-            <x:String>System.Activities.Validation</x:String>
-            <x:String>System.Activities.XamlIntegration</x:String>
-            <x:String>Microsoft.VisualBasic</x:String>
-            <x:String>Microsoft.VisualBasic.Activities</x:String>
-            <x:String>System</x:String>
-            <x:String>System.Collections</x:String>
-            <x:String>System.Collections.Generic</x:String>
-            <x:String>System.Data</x:String>
-            <x:String>System.Diagnostics</x:String>
-            <x:String>System.Drawing</x:String>
-            <x:String>System.IO</x:String>
-            <x:String>System.Linq</x:String>
-            <x:String>System.Net.Mail</x:String>
-            <x:String>System.Xml</x:String>
-            <x:String>System.Xml.Linq</x:String>
-            <x:String>UiPath.Core</x:String>
-            <x:String>UiPath.Core.Activities</x:String>
-            <x:String>System.Windows.Markup</x:String>
-        </sco:Collection>
-    </TextExpression.NamespacesForImplementation>
-    <TextExpression.ReferencesForImplementation>
-        <sco:Collection x:TypeArguments="AssemblyReference">
-            <AssemblyReference>System.Activities</AssemblyReference>
-            <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
-            <AssemblyReference>mscorlib</AssemblyReference>
-            <AssemblyReference>System.Data</AssemblyReference>
-            <AssemblyReference>System</AssemblyReference>
-            <AssemblyReference>System.Drawing</AssemblyReference>
-            <AssemblyReference>System.Core</AssemblyReference>
-            <AssemblyReference>System.Xml</AssemblyReference>
-            <AssemblyReference>System.Xml.Linq</AssemblyReference>
-            <AssemblyReference>PresentationFramework</AssemblyReference>
-            <AssemblyReference>WindowsBase</AssemblyReference>
-            <AssemblyReference>PresentationCore</AssemblyReference>
-            <AssemblyReference>System.Xaml</AssemblyReference>
-            <AssemblyReference>UiPath.System.Activities</AssemblyReference>
-            <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
-            <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
-        </sco:Collection>
-    </TextExpression.ReferencesForImplementation>
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1097,831" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="536,719" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="On Click Image" sap:VirtualizedContainerService.HintSize="494,627" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:TriggerScope sap:VirtualizedContainerService.HintSize="452,535" sap2010:WorkflowViewState.IdRef="TriggerScope_1" SchedulingMode="Sequential">
+        <ui:TriggerScope.Action>
+          <ActivityAction x:TypeArguments="ui:EventInfoTriggerArgs">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="ui:EventInfoTriggerArgs" Name="args" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Event handler" sap:VirtualizedContainerService.HintSize="376,151" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;굿&quot;]" />
+            </Sequence>
+          </ActivityAction>
+        </ui:TriggerScope.Action>
+        <ui:TriggerScope.Triggers>
+          <scg:List x:TypeArguments="Activity" Capacity="4">
+            <ui:ClickImageTriggerV2 ClippingRegion="{x:Null}" BlockEvent="False" DisplayName="Click Image Trigger 'explorer.exe Program'" sap:VirtualizedContainerService.HintSize="416,154" sap2010:WorkflowViewState.IdRef="ClickImageTriggerV2_1" KeyModifiers="None" MouseButton="BTN_LEFT" Selector="&lt;wnd app='explorer.exe' cls='Progman' title='Program Manager' /&gt;" TriggerMode="TriggerDown">
+              <ui:ClickImageTriggerV2.Image>
+                <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+              </ui:ClickImageTriggerV2.Image>
+            </ui:ClickImageTriggerV2>
+          </scg:List>
+        </ui:TriggerScope.Triggers>
+      </ui:TriggerScope>
+    </Sequence>
+  </Sequence>
 </Activity>
